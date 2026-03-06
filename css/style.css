@@ -21,6 +21,7 @@ html {
 
 body {
     padding: 1em;
+    padding-bottom: 0;
     background-color: var(--background-color);
 }
 
@@ -172,6 +173,16 @@ h1 {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
 
+.secondary {
+    border-style: none;
+    margin-top: 1em;
+}
+
+.secondary a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 section {
     padding: 3em min(2em, 15%);
     background-color: var(--base-color);
@@ -230,12 +241,22 @@ input[type=submit] {
     border-style: none;
 }
 
-.secondary {
-    border-style: none;
-    margin-top: 1em;
+footer {
+    padding-bottom: 1.5em;
+    padding-top: min(2em, 15%);
+    text-align: center;
+    margin: 2em auto 0 auto;
+    width: min(60em, 100%);
+    background-color: var(--base-color);
+    border-radius: 1em;
 }
 
-.secondary a {
+footer a {
+    margin: 0 1em;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-color)
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
