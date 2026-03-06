@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans+Chorasmian&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --base-color: #FCFAF9;
+    --text-color: #333333;
+    --background-color: #5E5E5E;
+    --button-primary: #48E5C2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 1em;
+    background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3 {
+    font-family: Merriweather, Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    margin-top: 1em;
+    padding-bottom: 1em;
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: min(60em, 100%);
+    background-color: var(--base-color);
+    padding: 1em;
+    border-radius: 1em;
+    transition: 0.4s;
+    z-index: 99;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav li:last-child {
+    margin-left: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.item {
+    border-bottom: 2px solid var(--button-primary);
+    transition: .4s;
+}
+
+.item:hover {
+    background-color: var(--button-primary);
+    border: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+.logo {
+    font-family: "Bruno Ace SC", sans-serif;
+    border: 2px solid black;
+    padding: .75em;
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+.focus-text {
+    color: var(--button-primary);
+}
+
+.secondary-text {
+    color: var(--text-secondary);
+}
+
+header,
+section {
+    margin: 2em auto;
+    width: min(60em, 100%);
+    background-color: var(--base-color);
+    padding-top: min(2em, 15%);
+    border-radius: 1em;
+    scroll-margin-top: 5em;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+header i {
+    color: var(--text-color);
+}
+
+.hero-links {
+    font-size: .75rem;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+.hero-links a {
+    transition: .4s ease;
+}
+
+.hero-links a:hover {
+    transform: scale(1.2);
+}
+
+section h2 {
+    border-bottom: 2px solid var(--button-primary);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.text-container {
+    flex: 0 1 34em;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.text-container p {
+    margin: .75em 0 1em 0;
+    font-size: 1.25rem;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--button-primary);
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: 600;
+    transition: 0.4s;
+    font-family: Merriweather, Poppins;
+}
+
+.cta-button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+section {
+    padding: 3em min(2em, 15%);
+    background-color: var(--base-color);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+section p {
+    margin-top: 1em;
+    font-size: 1.25rem;
+}
+
+.grid-container {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "img-1 img-1 img-2 img-3"
+        "img-1 img-1 img-4 img-5";
+    gap: 1em;
+}
+
+.grid-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: .5em;
+    transition: 100ms ease;
+}
+
+.grid-container img:hover {
+    scale: 1.05;
+}
+
+form {
+    padding: 1em;
+    text-align: left;
+}
+
+#contact img {
+    border-radius: 10em;
+    padding: 1em;
+}
+
+input {
+    padding: .5em;
+    margin-bottom: .5em;
+}
+
+input[type=submit] {
+    border-style: none;
+}
+
+.secondary {
+    border-style: none;
+    margin-top: 1em;
+}
+
+.secondary a {
+    text-decoration: none;
+    color: var(--text-color);
+}
