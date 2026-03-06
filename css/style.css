@@ -40,12 +40,19 @@ header {
 nav {
     position: fixed;
     top: 0;
-    width: min(60em, 100%);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
     background-color: var(--base-color);
-    padding: 1em;
-    border-radius: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     transition: 0.4s;
     z-index: 99;
+}
+
+.nav-container {
+    width: min(60em, 100%);
+    margin-inline: auto;
 }
 
 nav ul {
@@ -87,10 +94,6 @@ nav a {
 
 .focus-text {
     color: var(--button-primary);
-}
-
-.secondary-text {
-    color: var(--text-secondary);
 }
 
 header,
@@ -202,7 +205,7 @@ section p {
     padding-top: 1em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 20px;
+    gap: 1em;
     text-align: center;
 }
 
@@ -271,4 +274,75 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    header {
+        text-align: center;
+    }
+
+    header .text-container {
+        padding-top: 0;
+    }
+}
+
+@media(max-width: 767px) {
+    nav li {
+        display: none;
+    }
+
+    nav li:first-child,
+    nav li:last-child {
+        display: block;
+    }
+
+    header {
+        margin-top: 2.5em;
+    }
+
+    .cta-button {
+        margin-top: .5em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-container {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .text-container p {
+        font-size: 1rem;
+    }
+
+    .text-container button {
+        margin-bottom: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    header img {
+        height: 10em;
+        object-position: center;
+    }
+
+    .hero-links {
+        bottom: .5em;
+    }
+
+    .skills-grid {
+        grid-template-rows: 1fr auto;
+        row-gap: 1em;
+    }
+
+    .skill p {
+        margin: 0;
+    }
 }
