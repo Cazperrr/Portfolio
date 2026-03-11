@@ -227,7 +227,6 @@ section p {
 }
 
 .grid-container img {
-    height: 100%;
     width: 100%;
     border-radius: .5em;
     transition: 100ms ease;
@@ -250,6 +249,14 @@ form {
 input {
     padding: .5em;
     margin-bottom: .5em;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    padding: .5em;
+    margin-bottom: .5em;
+    resize: none;
 }
 
 input[type=submit] {
@@ -284,11 +291,20 @@ footer a:hover {
     header .text-container {
         padding-top: 0;
     }
+
+    ul .cta-button {
+        margin-right: auto;
+    }
+
+    ul .logo {
+        margin-left: auto;
+    }
 }
 
 @media(max-width: 767px) {
     nav li {
         display: none;
+
     }
 
     nav li:first-child,
@@ -304,6 +320,15 @@ footer a:hover {
         margin-top: .5em;
         width: 100%;
         text-align: center;
+    }
+
+    ul .cta-button {
+        width: 50%;
+        margin-right: auto;
+    }
+
+    ul .logo {
+        margin-left: auto;
     }
 
     .grid-container {
