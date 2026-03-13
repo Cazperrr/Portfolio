@@ -6,12 +6,10 @@ window.addEventListener("scroll", function () {
     }
 });
 
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather";
 const apiKey = "63a8a3fd2de25d3d346a29994d7cbe3d";
 const city = "Gothenburg";
-const url = `${apiUrl}?q=${city}&appid=${apiKey}&units=metric&lang=sv`;
-
-//test: https://api.openweathermap.org/data/2.5/weather?q=Stockholm&appid=63a8a3fd2de25d3d346a29994d7cbe3d&units=metric&lang=sv
+const url = `${apiURL}?q=${city}&appid=${apiKey}&units=metric&lang=sv`;
 
 fetch(url)
     .then((response) => {
@@ -24,7 +22,7 @@ fetch(url)
         return response.json();
     })
     .then((data) => {
-        const temprature = data.main.temp;
+        const temprature = Math.round(data.main.temp);
         const location = data.name;
         const image = document.querySelector('.weather-box img');
         document.getElementById("weatherInfo").innerHTML = `${location} ${temprature}°C.`;
