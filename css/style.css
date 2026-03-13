@@ -5,6 +5,7 @@
     --text-color: #333333;
     --background-color: #5E5E5E;
     --button-primary: #48E5C2;
+    --button-secondary: #E94F37;
 }
 
 * {
@@ -185,6 +186,7 @@ h1 {
     font-weight: 600;
     transition: 0.4s;
     font-family: Merriweather, Poppins;
+    cursor: pointer;
 }
 
 .cta-button:hover {
@@ -240,18 +242,34 @@ section p {
 }
 
 .grid-container .project-box {
-    height: 100%;
-    color: var(--text-color);
-}
-
-.grid-container img {
     width: 100%;
-    height: 80%;
+    color: var(--base-color);
+    background-color: var(--text-color);
     border-radius: .5em;
     transition: 100ms ease;
 }
 
-.grid-container img:hover {
+.grid-container img {
+    width: 100%;
+    height: 70%;
+    border-radius: .5em;
+}
+
+
+.project-button {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--button-secondary);
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: 600;
+    transition: 0.4s;
+    font-family: Merriweather, Poppins;
+    margin: .25em;
+}
+
+.project-button:hover {
     scale: 1.05;
 }
 
@@ -280,6 +298,7 @@ textarea {
 
 input[type=submit] {
     border-style: none;
+    cursor: pointer;
 }
 
 footer {
@@ -322,6 +341,21 @@ footer a:hover {
 
     .weather-box {
         display: none;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-box {
+        height: 33%;
+    }
+
+    .project-box img {
+        object-fit: cover;
+        object-position: top;
+        height: 30em;
     }
 }
 
