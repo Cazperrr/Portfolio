@@ -20,13 +20,13 @@ Projektet är byggt med:
 * Presentation av mig och mina projekt
 
 ## Projektstruktur
-```bash
+```
 /portfolio
 │
 ├── assets/
-|   └── cv
+│   └── cv
 ├── css/
-|   └── style.css
+│   └── style.css
 ├── images/
 ├── index.html
 └── index.js
