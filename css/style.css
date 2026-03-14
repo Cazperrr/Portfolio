@@ -248,6 +248,7 @@ section p {
     border-radius: .5em;
     transition: 100ms ease;
     border: 1em solid var(--text-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
 }
 
 .grid-container img {
@@ -272,6 +273,20 @@ section p {
 
 .project-button:hover {
     scale: 1.05;
+}
+
+.reference-container {
+    display: flex;
+    gap: 1em;
+    margin-top: 3em;
+}
+
+.reference-card {
+    background: var(--text-color);
+    color: var(--base-color);
+    padding: 1em;
+    border-radius: .5em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
 }
 
 form {
@@ -428,5 +443,9 @@ footer a:hover {
 
     .skill p {
         margin: 0;
+    }
+
+    .reference-container {
+        flex-direction: column;
     }
 }
