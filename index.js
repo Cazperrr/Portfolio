@@ -17,13 +17,13 @@ fetch(url)
             const weatherBox = document.querySelector('.weather-box');
             weatherBox.style.display = 'none';
 
-            throw new Error("Nätverksrespons var inte ok");
+            throw new Error("Network response was not ok.");
         }
         return response.json();
     })
     .then((data) => {
         const temprature = Math.round(data.main.temp);
-        const location = data.name;
+        const location = "Göteborg";
         const image = document.querySelector('.weather-box img');
         document.getElementById("weatherInfo").innerHTML = `${location} ${temprature}°C.`;
 
@@ -53,5 +53,5 @@ fetch(url)
         }
     })
     .catch((error) => {
-        console.error("Det gick inte att hämta väderdata:", error)
+        console.error("Unable to retrieve weather data:", error)
     });
