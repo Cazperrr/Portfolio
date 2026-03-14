@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans+Chorasmian&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --base-color: #FCFAF9;
-    --text-color: #333333;
-    --background-color: #5E5E5E;
-    --button-primary: #48E5C2;
-    --button-secondary: #E94F37;
+    --base-color: #f5f5f5;
+    --text-color: #111111;
+    --background-color: #ffffff;
+    --button-primary: #3b82f6;
+    --button-secondary: #6b7280;
+
+    /* darkmode? */
+    /* --base-color: #0f172a;
+    --text-color: #f1f5f9;
+    --background-color: #1e293b;
+    --button-primary: #38bdf8;
+    --button-secondary: #94a3b8; */
 }
 
 * {
@@ -30,12 +37,6 @@ h1,
 h2,
 h3 {
     font-family: Merriweather, Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-header {
-    margin-top: 1em;
-    padding-bottom: 1em;
-    position: relative;
 }
 
 nav {
@@ -94,7 +95,7 @@ nav a {
 }
 
 .weather-box {
-    background-color: var(--background-color);
+    background-color: var(--button-secondary);
     color: var(--base-color);
     border-radius: .5em;
     display: flex;
@@ -122,18 +123,23 @@ section {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
 
+header {
+    margin-top: 6em;
+    padding-bottom: 2em;
+    position: relative;
+}
 
 header i {
     color: var(--text-color);
 }
 
 .hero-links {
-    font-size: .75rem;
+    font-size: 1rem;
     position: absolute;
     bottom: 1em;
     right: 1em;
     display: flex;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .hero-links a {
@@ -142,6 +148,13 @@ header i {
 
 .hero-links a:hover {
     transform: scale(1.2);
+}
+
+.tag {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #6b7280;
+    text-transform: uppercase;
 }
 
 section h2 {
@@ -154,6 +167,10 @@ section h2 {
     align-items: center;
     flex-wrap: wrap;
     gap: 3em;
+}
+
+.hero .flex-container {
+    gap: 5em;
 }
 
 header img {
@@ -190,7 +207,7 @@ h1 {
 }
 
 .cta-button:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 16px 0 rgba(148, 163, 184, 0.6);
 }
 
 .secondary {
@@ -243,11 +260,11 @@ section p {
 
 .grid-container .project-box {
     width: 100%;
-    color: var(--base-color);
-    background-color: var(--text-color);
+    color: var(--text-color);
+    background-color: var(--background-color);
     border-radius: .5em;
     transition: 100ms ease;
-    border: 1em solid var(--text-color);
+    border: 1em solid var(--background-color);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
 }
 
@@ -261,7 +278,7 @@ section p {
 .project-button {
     display: inline-block;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--base-color);
     background-color: var(--button-secondary);
     padding: .75em 1.25em;
     border-radius: .5em;
@@ -282,8 +299,8 @@ section p {
 }
 
 .reference-card {
-    background: var(--text-color);
-    color: var(--base-color);
+    background: var(--background-color);
+    color: var(--text-color);
     padding: 1em;
     border-radius: .5em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
@@ -322,7 +339,7 @@ footer {
     padding-top: min(2em, 15%);
     text-align: center;
     margin: 2em auto 0 auto;
-    width: min(60em, 100%);
+    width: min(80em, 100%);
     background-color: var(--base-color);
     border-radius: 1em;
     position: relative;
@@ -384,10 +401,6 @@ footer a:hover {
     nav li:first-child,
     nav li:last-child {
         display: block;
-    }
-
-    header {
-        margin-top: 2.5em;
     }
 
     .cta-button {
