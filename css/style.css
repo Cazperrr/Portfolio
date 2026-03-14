@@ -247,6 +247,7 @@ section p {
     background-color: var(--text-color);
     border-radius: .5em;
     transition: 100ms ease;
+    border: 1em solid var(--text-color);
 }
 
 .grid-container img {
