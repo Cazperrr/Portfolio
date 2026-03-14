@@ -50,6 +50,7 @@ nav {
     padding-bottom: 1em;
     transition: 0.4s;
     z-index: 99;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
 
 .nav-container {
@@ -207,7 +208,7 @@ h1 {
 }
 
 .cta-button:hover {
-    box-shadow: 0 8px 16px 0 rgba(148, 163, 184, 0.6);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
 
 .secondary {
@@ -343,6 +344,7 @@ footer {
     background-color: var(--base-color);
     border-radius: 1em;
     position: relative;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
 
 footer a {
