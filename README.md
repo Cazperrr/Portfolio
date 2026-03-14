@@ -24,9 +24,9 @@ Projektet är byggt med:
 /portfolio
 │
 ├── assets/
-    └── cv
+|   └── cv
 ├── css/
-    └── style.css
+|   └── style.css
 ├── images/
 ├── index.html
 └── index.js
