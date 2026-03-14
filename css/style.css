@@ -81,7 +81,7 @@ nav a {
     background-color: var(--button-primary);
     border: .75em 1.25em;
     border-radius: .5em;
-    font-weight: 600;
+    scale: 1.1;
 }
 
 .logo {
@@ -90,6 +90,20 @@ nav a {
     padding: .75em;
     border-radius: .5em;
     font-weight: 600;
+}
+
+.weather-box {
+    background-color: var(--background-color);
+    color: var(--base-color);
+    border-radius: .5em;
+    display: flex;
+    align-items: center;
+    padding-left: .5em;
+}
+
+.weather-box img {
+    height: 2em;
+
 }
 
 .focus-text {
@@ -106,6 +120,7 @@ section {
     scroll-margin-top: 5em;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
+
 
 header i {
     color: var(--text-color);
@@ -271,6 +286,7 @@ footer {
     width: min(60em, 100%);
     background-color: var(--base-color);
     border-radius: 1em;
+    position: relative;
 }
 
 footer a {
@@ -298,6 +314,10 @@ footer a:hover {
 
     ul .logo {
         margin-left: auto;
+    }
+
+    .weather-box {
+        display: none;
     }
 }
 
