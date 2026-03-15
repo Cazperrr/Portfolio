@@ -50,7 +50,6 @@ nav {
     padding-bottom: 1em;
     transition: 0.4s;
     z-index: 99;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
 
 .nav-container {
@@ -106,7 +105,6 @@ nav a {
 
 .weather-box img {
     height: 2em;
-
 }
 
 .focus-text {
@@ -152,9 +150,9 @@ header i {
 }
 
 .tag {
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: #6b7280;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    color: var(--button-secondary);
     text-transform: uppercase;
 }
 
