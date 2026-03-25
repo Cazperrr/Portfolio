@@ -273,6 +273,9 @@ section p {
     border-radius: .5em;
 }
 
+.project-box i {
+    font-size: 1.5rem;
+}
 
 .project-button {
     display: inline-block;
