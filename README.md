@@ -1,25 +1,26 @@
 # Web Portfolio
-## Beskrivning
-Detta projekt är en personlig web portfolio skapad som en del av ett skolprojekt.
+## Description
 
-Syftet med projektet är att presentera mig själv, mina projekt och mina kunskaper inom webbutveckling.
+This project is a personal web portfolio created as part of a school assignment.
 
-Portfolion är byggd med grundläggande webbtekniker och fokuserar på responsiv design, användarvänlighet och en tydlig presentation av projekt.
+The purpose of the project is to present myself, my projects, and my skills in web development.
 
-## Tekniker
-Projektet är byggt med:
+The portfolio is built using fundamental web technologies and focuses on responsive design, user-friendliness, and a clear presentation of projects.
+
+## Technologies
+The project is built with:
 * HTML
 * CSS
 * JavaScript
 
-## Funktioner
-* Responsiv design för mobil, surfplatta och desktop
-* Interaktiva element med JavaScript
-* Anropa väder API för Göteborg
-* Navigationsmeny för enkel användning
-* Presentation av mig och mina projekt
+## Features
+* Responsive design for mobile, tablet, and desktop
+* Interactive elements using JavaScript
+* Calls a weather API for Gothenburg
+* Navigation menu for easy use
+* Presentation of myself and my projects
 
-## Projektstruktur
+## Project Structure
 ```
 /portfolio
 │
@@ -32,9 +33,9 @@ Projektet är byggt med:
 └── index.js
 ```
 
-## Syfte med projektet
-Projektet skapades för att:
+## Purpose of the Project
+The project was created to:
 
-* Öva på HTML, CSS, JavaScript
-* Lära mig strukturera en webbsida
-* Skapa en portfolio för att visa upp projekt
+* Practice HTML, CSS, and JavaScript
+* Learn how to structure a web page
+* Create a portfolio to showcase my projects
