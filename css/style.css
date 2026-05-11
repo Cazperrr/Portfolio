@@ -5,7 +5,7 @@
     --text-color: #111111;
     --background-color: #ffffff;
     --button-primary: #3b82f6;
-    --button-secondary: #6b7280;
+    --button-secondary: #e2e8f0;
 }
 
 .darkmode {
@@ -135,6 +135,54 @@ nav a {
     height: 2em;
 }
 
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 36px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background-color: #e2e8f0;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    z-index: 2;
+}
+
+input:checked+.slider {
+    background-color: #334155;
+}
+
+input:checked+.slider::before {
+    transform: translateX(34px);
+    background-color: #0f172a;
+}
+
 .focus-text {
     color: var(--button-primary);
 }
@@ -181,7 +229,7 @@ header i {
 .tag {
     font-size: 1rem;
     letter-spacing: .05rem;
-    color: var(--button-secondary);
+    color: var(--text-color);
     text-transform: uppercase;
 }
 
@@ -432,6 +480,10 @@ footer a:hover {
 
     nav li:first-child,
     nav li:last-child {
+        display: block;
+    }
+
+    .switch {
         display: block;
     }
 
