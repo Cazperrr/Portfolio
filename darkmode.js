@@ -3,6 +3,7 @@ const themeToggle = document.getElementById("theme-toggle");
 // Load saved theme
 if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("darkmode");
+    themeToggle.checked = true;
 }
 
 themeToggle.addEventListener("click", () => {

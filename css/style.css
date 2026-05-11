@@ -155,7 +155,7 @@ nav a {
 .slider {
     position: absolute;
     inset: 0;
-    background-color: #e2e8f0;
+    background-color: var(--button-secondary);
     border-radius: 999px;
     cursor: pointer;
     transition: 0.3s ease;
@@ -173,7 +173,7 @@ nav a {
     left: 4px;
     top: 50%;
     transform: translateY(-50%);
-    background-color: white;
+    background-color: var(--background-color);
     border-radius: 50%;
     transition: 0.3s ease;
     z-index: 2;
@@ -193,7 +193,7 @@ nav a {
 }
 
 input:checked+.slider {
-    background-color: #334155;
+    background-color: var(--button-secondary);
 }
 
 input:checked+.slider::before {
