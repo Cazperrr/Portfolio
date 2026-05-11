@@ -88,8 +88,14 @@ nav {
 nav ul {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     list-style-type: none;
     gap: 2em;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
 }
 
 nav li:last-child {
@@ -114,12 +120,10 @@ nav a {
     scale: 1.1;
 }
 
-.logo {
-    font-family: "Bruno Ace SC", sans-serif;
-    border: 2px solid var(--text-color);
-    padding: .75em;
-    border-radius: .5em;
-    font-weight: 600;
+.logo img {
+    height: 2.5rem;
+    width: auto;
+    display: block;
 }
 
 .weather-box {
@@ -138,8 +142,8 @@ nav a {
 .theme-switch {
     position: relative;
     display: inline-block;
-    width: 70px;
-    height: 36px;
+    width: 60px;
+    height: 32px;
 }
 
 .theme-switch input {
@@ -158,20 +162,34 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 8px;
+    padding: 0 6px;
 }
 
 .slider::before {
     content: "";
     position: absolute;
-    height: 28px;
-    width: 28px;
+    height: 24px;
+    width: 24px;
     left: 4px;
-    bottom: 4px;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: white;
     border-radius: 50%;
     transition: 0.3s ease;
     z-index: 2;
+}
+
+.slider i {
+    font-size: .85rem;
+    z-index: 1;
+}
+
+.fa-sun {
+    margin-left: 2px;
+}
+
+.fa-moon {
+    margin-right: 2px;
 }
 
 input:checked+.slider {
@@ -179,8 +197,7 @@ input:checked+.slider {
 }
 
 input:checked+.slider::before {
-    transform: translateX(34px);
-    background-color: #0f172a;
+    transform: translate(28px, -50%);
 }
 
 .focus-text {
